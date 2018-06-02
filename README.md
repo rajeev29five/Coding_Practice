@@ -1,4 +1,4 @@
-# Coding_Practice
+# Coding Practice
 
 ## Dynamic Programming
 
