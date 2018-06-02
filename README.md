@@ -1,2 +1,5 @@
 # Coding_Practice
-Coding Problems on different topics sorted in ascending order of difficulty
+
+## Dynamic Programming
+
+<a href="http://www.spoj.com/problems/SUMITR/">Sums in a Triangle</a>(SPOJ)
