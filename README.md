@@ -4,7 +4,7 @@
 
 ###  Beginner
 
-[Sereja and Suffixes.{:target="_blank"}](http://codeforces.com/problemset/problem/368/B)
+[Sereja and Suffixes.](http://codeforces.com/problemset/problem/368/B){:target="blank"}
 <a href="http://codeforces.com/problemset/problem/368/B" target="_blank">Sereja and Suffixes.</a> (Codeforces)<br>
 <a href="https://www.codechef.com/problems/SUBINC" target="_blank">Count Subarrays.</a> (CodeChef)<br>
 <a href="http://www.spoj.com/problems/SUMITR/" target="_blank">Sums in a Triangle,</a> (SPOJ)<br>
