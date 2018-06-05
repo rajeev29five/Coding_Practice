@@ -5,4 +5,5 @@
 * [Sums in a Triangle.](http://www.spoj.com/problems/SUMITR/) (SPOJ) 
 * [Kefa and First Steps.](http://codeforces.com/problemset/problem/580/A) (Codeforces)
 * [The Knapsack Problem.](http://www.spoj.com/problems/KNAPSACK/) (SPOJ)
+* [Wachovia Bank.](http://www.spoj.com/problems/WACHOVIA/) (SPOJ)
 * [Bytelandian Gold Coins.](https://www.codechef.com/problems/COINS) (Codechef)
