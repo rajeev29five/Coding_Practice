@@ -37,31 +37,31 @@ void dfs(Node * adjList[], int node, bool v[], int p[])
 
 int main()
 {
-	int v;
-	cin>>v;
+	int vertices;
+	cin>>vertices;
 	int start, end;
-	Node * adjList[v+1]={NULL};
-	bool visited[v+1] = {false};
-	int parent[v+1] = {0};		// Not necessary for dfs
-	for(int i = 1; i<=v; i++)
+	Node * adjList[vertices+1]={NULL};
+	bool visited[vertices+1] = {false};
+	int parent[vertices+1] = {0};		// Not necessary for dfs
+	for(int i = 1; i<=vertices; i++)	// Replace <= by < for undirected graph
 	{
 		cin>>start>>end;
 		adjList[start] = insertNode(adjList[start], end);
 		//
-		// Uncomment this line for undirected graph
+		// Uncomment the following line for undirected graph
 		//
 		//adjList[end] = insertNode(adjList[end], start);
 	}
 	parent[1] = 0;
-	for(int i = 1; i<=v; i++)
+	for(int i = 1; i<=vertices; i++)
 	{
 		if(!visited[i])
 			dfs(adjList, i, visited, parent);
 	}
 	//
-	// Uncomment to see parent of a node.
+	// Uncomment the following lines to see parent of a node.
 	//
-	//for(int i = 1; i<=v; i++)
+	//for(int i = 1; i<=vertices; i++)
 	//{
 	//	cout<<i<<":"<<parent[i]<<endl;
 	//}
