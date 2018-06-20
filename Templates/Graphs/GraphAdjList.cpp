@@ -1,5 +1,5 @@
 //
-// Code Contribution : Rajeev Ranjan
+// Code Contribution(s): Rajeev Ranjan
 //
 
 #include <iostream>
