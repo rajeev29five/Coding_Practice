@@ -1,3 +1,5 @@
+## Try to solve sequentially.
+
 ### Beginner
 
 * Implement Adjacency Matrix.
