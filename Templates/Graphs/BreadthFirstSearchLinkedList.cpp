@@ -105,4 +105,80 @@ int main(int argc, char const *argv[])
 	}
 
 	return 0;
-}					
+}				
+
+/*
+
+Test Case: 1
+
+-----INPUT-----
+9
+12
+1 2
+1 6
+1 8
+2 3
+3 4
+3 8
+3 9
+4 5
+5 7
+5 9
+6 7
+7 9
+
+-----OUTPUT-----
+
+Node 1 is on level 0 and its parent is 0
+Node 2 is on level 1 and its parent is 1
+Node 3 is on level 2 and its parent is 2
+Node 4 is on level 3 and its parent is 3
+Node 5 is on level 3 and its parent is 7
+Node 6 is on level 1 and its parent is 1
+Node 7 is on level 2 and its parent is 6
+Node 8 is on level 1 and its parent is 1
+Node 9 is on level 3 and its parent is 3
+
+
+TEST CASE: 2
+
+-----INPUT------
+12
+21
+1 3
+1 4
+2 3
+2 4
+2 5
+2 7
+2 8
+2 12
+3 5
+3 12
+5 7
+5 8
+5 12
+4 7
+4 9
+7 8 7 9
+6 8
+6 10
+9 10
+10 11
+
+-----OUTPUT----
+
+Node 1 is on level 4 and its parent is 4
+Node 2 is on level 4 and its parent is 8
+Node 3 is on level 5 and its parent is 2
+Node 4 is on level 3 and its parent is 9
+Node 5 is on level 4 and its parent is 8
+Node 6 is on level 2 and its parent is 10
+Node 7 is on level 3 and its parent is 9
+Node 8 is on level 3 and its parent is 6
+Node 9 is on level 2 and its parent is 10
+Node 10 is on level 1 and its parent is 11
+Node 11 is on level 0 and its parent is 0
+Node 12 is on level 5 and its parent is 2
+
+*/
