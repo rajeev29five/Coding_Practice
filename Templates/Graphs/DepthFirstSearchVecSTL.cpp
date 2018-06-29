@@ -55,3 +55,36 @@ int main()
 	
 	return 0;
 }
+
+/*
+
+Test Case 
+   
+----Input----
+
+10
+1 2   
+1 3
+2 4
+3 2
+4 3
+4 5
+5 6
+7 8
+8 9
+9 10
+
+----Output----
+
+Parent of 1 is 0
+Parent of 2 is 3
+Parent of 3 is 1
+Parent of 4 is 2
+Parent of 5 is 4
+Parent of 6 is 5
+Parent of 7 is 0
+Parent of 8 is 7
+Parent of 9 is 8
+Parent of 10 is 9
+
+*/
