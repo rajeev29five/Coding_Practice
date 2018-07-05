@@ -16,4 +16,6 @@
 * [Bishu and his Girlfriend](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/)(Hackerearth)
 * [Is it a tree?](https://www.spoj.com/problems/PT07Y/)(SPOJ)
 * [New Year Transportation](http://codeforces.com/problemset/problem/500/A)(Codeforces)
+* [Minimum Spanning Tree](https://www.spoj.com/problems/MST/)(SPOJ)
+* [Cobbled Streets](https://www.spoj.com/problems/CSTREET/)(SPOJ)
 * [Dark Roads](https://www.spoj.com/problems/ULM09/)(SPOJ)
