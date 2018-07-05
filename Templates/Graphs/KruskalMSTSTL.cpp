@@ -96,3 +96,45 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+/*
+
+Test Case
+
+---Input---
+8
+14
+0 1 4
+0 7 8
+1 2 8
+1 7 11
+2 3 7
+2 5 4
+2 8 2
+3 4 9
+3 5 14
+4 5 10
+5 6 2
+6 7 1
+6 8 6
+7 8 7
+
+---Output---
+Weight   Source    Destination
+   1        6              7
+   2        2              8
+   2        5              6
+   4        0              1
+   4        2              5
+   6        6              8
+   7        2              3
+   7        7              8
+   8        0              7
+   8        1              2
+   9        3              4
+  10        4              5
+  11        1              7
+  14        3              5
+Total Weight of Spanning Tree : 37
+
+*/
