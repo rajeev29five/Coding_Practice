@@ -9,6 +9,29 @@ public:
 	int label;	
 };
 
+int addVertex(Heap minHeap[], Heap newValue, int size)
+{
+    ++size;
+    minHeap[size] = newValue;
+
+    int i = size;
+    Heap temp;
+
+    while (i > 1) {
+        if (minHeap[i / 2].value > minHeap[i].value) {
+            temp = minHeap[i / 2];
+            minHeap[i / 2] = minHeap[i];
+            minHeap[i] = temp;
+
+            i = i / 2;
+        } else {
+            break;
+        }
+    }
+
+    return size;
+}
+
 void heapify(Heap minHeap[], int size, int index)
 {
 	Heap temp;
@@ -69,6 +92,16 @@ int main(int argc, char const *argv[])
 	}
 
 	buildHeap(minHeap, n);
+
+	for(int i = 1; i<=n; i++)
+	{
+		cout<<minHeap[i].label<<":"<<minHeap[i].value<<" ";
+	}
+
+	Heap node;
+	cin>>node.label>>node.value;
+
+	n = addVertex(minHeap, node, n);
 
 	// Display Heap
 	for(int i = 1; i<=n; i++)
