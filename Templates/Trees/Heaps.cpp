@@ -1,7 +1,3 @@
-//
-// Code Contributor(s): Rajeev Ranjan
-//
-
 #include <iostream>
 
 using namespace std;
@@ -9,7 +5,7 @@ using namespace std;
 class Heap
 {
 public:
-	int data;
+	int value;
 	int label;	
 };
 
@@ -22,29 +18,29 @@ void heapify(Heap minHeap[], int size, int index)
 		{
 			if(minHeap[index].value > minHeap[2*index].value)
 			{
-				temp = minHeap[index].value;
-				minHeap[index] = minHeap[2*index].value;
-				minHeap[2*index].value = temp;
+				temp = minHeap[index];
+				minHeap[index] = minHeap[2*index];
+				minHeap[2*index] = temp;
 
 				break;
 			}
 		}
 
-		if(minHeap[index].value > minHeap[2*index] || minHeap[index].value > minHeap[2*index+1])
+		if(minHeap[index].value > minHeap[2*index].value || minHeap[index].value > minHeap[2*index+1].value)
 		{
-			if(minHeap[2*index].value < minHeap[2*index+1])
+			if(minHeap[2*index].value < minHeap[2*index+1].value)
 			{
-				temp = minHeap[index].value;
-				minHeap[index].value = minHeap[2*index].value;
-				minHeap[2*index].value = temp;
+				temp = minHeap[index];
+				minHeap[index] = minHeap[2*index];
+				minHeap[2*index] = temp;
 
 				index = 2*index;
 			}
 			else
 			{
-				temp = minHeap[index].value;
-				minHeap[index].value = minHeap[2*index+1].value;
-				minHeap[2*index+1].value = temp;
+				temp = minHeap[index];
+				minHeap[index] = minHeap[2*index+1];
+				minHeap[2*index+1] = temp;
 
 				index = 2*index+1;
 			}
@@ -69,8 +65,15 @@ int main(int argc, char const *argv[])
 	Heap minHeap[n+2];
 	for(int i = 1; i<=n; i++)
 	{
-		cin>>minHeap[i].data>>minHeap[i].label;
+		cin>>minHeap[i].label>>minHeap[i].value;
 	}
+
 	buildHeap(minHeap, n);
+
+	// Display Heap
+	for(int i = 1; i<=n; i++)
+	{
+		cout<<minHeap[i].label<<":"<<minHeap[i].value<<" ";
+	}
 	return 0;
 }
