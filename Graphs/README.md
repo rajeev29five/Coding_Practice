@@ -19,3 +19,4 @@
 * [Minimum Spanning Tree](https://www.spoj.com/problems/MST/)(SPOJ)
 * [Cobbled Streets](https://www.spoj.com/problems/CSTREET/)(SPOJ)
 * [Dark Roads](https://www.spoj.com/problems/ULM09/)(SPOJ)
+* [True Friends](https://www.spoj.com/status/ns=21956893)(SPOJ)
