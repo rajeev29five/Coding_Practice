@@ -9,25 +9,27 @@
 |begin( )|iterator|iterator to first element|v.begin()|
 |end( )|iterator|iterator to second element|v.end()|
 |erase(position iterator)||remove specified element|v.end(iterator)|
+|upper_bound(iter first, iter last, value)|iterator|iterator to first element in range > value, if not present returns iter to end|upper_bound(itr first, itr last, value)|
+|lower_bound(iter first, iter last, value)|iterator|iterator to first element in range which has value not less than **value**, if not present returns iter to end||
 
 ### Map
 
 |Method| Return Type|Description|Example|
 |---|---|---|---|
 |size( )|integer|size of vector|m.size()|
-|insert(pair<key, value>)|void|add a new element|m.insert(pair<objec, object>(key, value))|
+|insert(pair<key, value>)|void|add a new element|m.insert(pair<object, object>(key, value))|
 |begin( )|iterator|iterator to first element|m.begin()|
 |end( )|iterator|iterator to second element|m.end()|
-|find(key)|iterator|iterator to key value if found else iterator to the end|m.find(key)|
-|erase(position iterator)||remove specified element|m.end()|
+|find(key)|iterator|iterator to key value if present else iterator to the end|m.find(key)|
+|erase(key)|void|removes specified key|m.erase(key)|
 
 ### Queue
 
-| Method | Return Type | Description |
-|---|---|---|
-|size( )|integer|size of queue |   
-|empty( )|boolean|empty or not|
-|front( )|reference|first element of queue|
-|back( )|reference|last element of queue|
-|push(data)|void|add element at the end|
-|pop()|void|deletes first element|
+| Method | Return Type | Description |Example|
+|---|---|---|---|
+|size( )|integer|size of queue |q.size()|
+|empty( )|boolean|empty or not|q.empty()|
+|front( )|reference|first element of queue|q.front()|
+|back( )|reference|last element of queue|q.back()|
+|push(data)|void|add element at the end|q.push(objec)|
+|pop()|void|deletes first element|q.pop()|
