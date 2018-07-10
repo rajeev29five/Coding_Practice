@@ -20,3 +20,4 @@
 * [Cobbled Streets](https://www.spoj.com/problems/CSTREET/)(SPOJ)
 * [Dark Roads](https://www.spoj.com/problems/ULM09/)(SPOJ)
 * [True Friends](https://www.spoj.com/status/ns=21956893)(SPOJ)
+* [Components in a graph](https://www.hackerrank.com/challenges/components-in-graph/problem)(Hackerrank)
