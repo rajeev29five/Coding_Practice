@@ -3,6 +3,7 @@
 ## Beginner
 
 * [Sereja and Suffixes.](http://codeforces.com/problemset/problem/368/B) (Codeforces) 
+* [Alternating Subarray Prefix](https://www.codechef.com/problems/ALTARAY)(Codechef)
 * [Count Subarrays.](https://www.codechef.com/problems/SUBINC) (Codechef) 
 * [Sums in a Triangle.](http://www.spoj.com/problems/SUMITR/) (SPOJ) 
 * [Minimum Step To One.](https://www.spoj.com/problems/MST1/) (SPOJ)
