@@ -2,7 +2,7 @@
 
 ### Vector
 
-|Method		                          |Return Type                  |Description               |Example |
+|Method		                                |Return Type                  |Description               |Example |
 |-----------------------------------------|-----------------------------|--------------------------|--------|
 |size( )                                  |integer                      |size of vector            |v.size()|
 |push_back(data)                          |void                         |add element at the end    |v.push_back(object)|
@@ -33,3 +33,29 @@
 |back( )   |reference   |last element of queue |q.back()     |
 |push(data)|void        |add element at the end|q.push(objec)|
 |pop()     |void        |deletes first element |q.pop()      |
+
+### Stack
+
+|Method    |Return Type |Description              |Example      |
+|----------|------------|-------------------------|-------------|
+|size( )   |integer     |size of stack            |s.size()     |
+|empty( )  |boolean     |empty or not             |s.empty()    |
+|top( )    |reference   |topmost element in stack |s.top()      |
+|push(data)|void        |add element at the end   |s.push(objec)|
+|pop()     |void        |deletes first element    |s.pop()      |
+
+
+## Java
+
+### Scanner
+
+|Method      |Return Type| Description                   |
+|----------- |-----------|-------------------------------|
+|next( )     | String    |returns next token from scanner|
+|nextLine( ) | String    |moves scanner position to the next line and returns the value as a string|
+|nextByte( ) | byte      |returns next token as byte  |
+|nextShort() | short     |returns next token as short |
+|nextInt( )  | integer	 |returns next token as int   |
+|nextLong( ) | long      |returns next token as long  |
+|nextFloat() | float     |returns next token as float |
+|nextDouble()| double    |returns next token as double|
