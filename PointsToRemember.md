@@ -31,7 +31,7 @@
 |empty( )  |boolean     |empty or not          |q.empty()    |
 |front( )  |reference   |first element of queue|q.front()    |
 |back( )   |reference   |last element of queue |q.back()     |
-|push(data)|void        |add element at the end|q.push(objec)|
+|push(data)|void        |add element at the end|q.push(object)|
 |pop()     |void        |deletes first element |q.pop()      |
 
 ### Stack
