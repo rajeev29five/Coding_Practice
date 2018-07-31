@@ -59,3 +59,22 @@
 |nextLong( ) | long      |returns next token as long  |
 |nextFloat() | float     |returns next token as float |
 |nextDouble()| double    |returns next token as double|
+
+### ArrayList
+
+|Method      |Return Type| Description                   |
+|----------- |-----------|-------------------------------|
+|add(int index, Object )     | void    |add objects to array list|
+|addAll(Collection) | boolean    |add all the element of Collection to list|
+
+### LinkedList
+
+|Method      |Return Type| Description                   |
+|----------- |-----------|-------------------------------|
+|add(Object)    | void    |adds object to list|
+|addFirst(Object) | void    |adds object by head insertion|
+|addLast(Object) | void      |adds object by tail insertion  |
+|contains(Object) | boolean     |return true if object is present |
+|getFirst( )  | Object	 |returns first object in list  |
+|getLast( ) | Object      |returns last object in list |
+|remove(Object) | boolean     |removes particular object from the list |
