@@ -66,6 +66,7 @@
 |----------- |-----------|-------------------------------|
 |add(int index, Object )     | void    |add objects to array list|
 |addAll(Collection) | boolean    |add all the element of Collection to list|
+|size()|integer|size of ArrayList|
 
 ### LinkedList
 
@@ -78,3 +79,13 @@
 |getFirst( )  | Object	 |returns first object in list  |
 |getLast( ) | Object      |returns last object in list |
 |remove(Object) | boolean     |removes particular object from the list |
+|size()|integer|size of LinkeList|
+
+### HashSet
+
+|Method      |Return Type| Description                   |
+|----------- |-----------|-------------------------------|
+|add(Object)    | void    |adds object to HashSet|
+|size() | integer    |size of HashSet|
+|contains(Object) | boolean     |return true if object is present |
+|isEmpty()| boolean| return true if empty else false|
