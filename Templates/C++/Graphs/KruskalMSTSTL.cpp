@@ -1,6 +1,15 @@
 //
 // Code Contributor(s): Rajeev Ranjan
 //
+// Time Complexity:
+//
+// T(n) =  O(1) + O(V) + O(E log E) + O(V log V) 👈 Union by rank
+//        make set 👆        👆 sort
+//       = O(E log E) + O(V log V)
+//        as |E| >= |V| - 1
+// T(n) = E log E + E log E
+//      = E log E
+//
 
 #include <iostream>
 #include <vector>

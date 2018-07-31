@@ -1,8 +1,11 @@
 //
 //	Code Contributor(s): Rajeev Ranjan
 //
+//      Time Complexity : O(VE)
+//
 
 #include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -58,7 +61,7 @@ int main(int argc, char const *argv[])
 	}
 
 	int distance[vertices];
-	fill(distance, distance+vertices, INT8_MAX);
+	fill(distance, distance+vertices, INT_MAX);
 	int source;
 	cin>>source;
 	int parent[vertices]={-1};
