@@ -62,11 +62,25 @@
 
 ### ArrayList
 
+The important points about Java ArrayList class are:
+
+* Java ArrayList class can contain duplicate elements.
+* Java ArrayList class maintains insertion order.
+* Java ArrayList class is non synchronized.
+* Java ArrayList allows random access because array works at the index basis.
+* In Java ArrayList class, manipulation is slow because a lot of shifting needs to be occurred if any element is removed from the array list.
+
+
 |Method      |Return Type| Description                   |
 |----------- |-----------|-------------------------------|
 |add(int index, Object )     | void    |add objects to array list|
 |addAll(Collection) | boolean    |add all the element of Collection to list|
 |size()|integer|size of ArrayList|
+
+Iterator itr = al.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
 
 ### LinkedList
 
