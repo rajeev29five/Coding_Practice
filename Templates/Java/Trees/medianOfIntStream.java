@@ -1,6 +1,5 @@
 //
 // Code Contributor(s) : Rajeev Ranjan
-//even better i like it
 
 import java.util.Scanner;
 import java.util.PriorityQueue;
