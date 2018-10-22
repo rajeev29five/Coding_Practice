@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//great code
 class MergeSort {
 
     public static void merge(int a[], int l, int m, int n)
