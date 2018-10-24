@@ -1,4 +1,4 @@
-## Try to solve sequentially.
+## Try to solve sequentially
 
 ### Beginner
 
