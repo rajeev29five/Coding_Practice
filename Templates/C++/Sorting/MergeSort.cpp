@@ -1,6 +1,9 @@
-// what a nice code bro
+//
+// Code Contrubutor(s) : Rajeev Ranjan
+//
+
 #include <iostream>
-//what a nice coding
+
 using namespace std;
 
 void merge(int a[], int l, int m, int n)
@@ -70,7 +73,7 @@ void printArray(int a[], int n)
 int main(int argc, char const *argv[]) {
 
     int n;
-    cin>>n;
+    cin>>n;C
     int a[n];
     for(int i = 0; i<n; i++) cin>>a[i];
     mergeSort(a, 0, n-1);
