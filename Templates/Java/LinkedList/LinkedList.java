@@ -1,6 +1,6 @@
 //
 // Code Contributor(s): Rajeev Ranjan
-//java is good programming language
+//
 
 class Node {
   int data;
