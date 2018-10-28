@@ -1,6 +1,6 @@
 //
-// Code Contributor(s): Rajeev Ranjan
-//hacktoberfest contributor Sanjeev
+// Code Contributor(s): Rajeev Ranjan, Sanjeev Kushwah
+//
 
 import java.util.Scanner;
 import java.lang.*;
