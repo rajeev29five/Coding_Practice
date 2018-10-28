@@ -1,6 +1,6 @@
 #
-# Code Contributor(s): Rajeev Ranjan
-#2nd contributor Sanjeev
+# Code Contributor(s): Rajeev Ranjan, Sanjeev Kushwah
+#
 
 def prefixArray(pattern):
     i = 1
