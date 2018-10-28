@@ -1,7 +1,7 @@
 //
 // Code Contributor(s) : Rajeev Ranjan
 //
-// nice code bro
+
 #include <iostream>
 
 using namespace std;
