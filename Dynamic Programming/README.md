@@ -1,5 +1,5 @@
 ## Try to solve sequentally.
-
+## enjoy coding
 ## Beginner
 
 * [Sereja and Suffixes.](http://codeforces.com/problemset/problem/368/B) (Codeforces) 
