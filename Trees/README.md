@@ -1,6 +1,7 @@
 ### Try to solve sequentially.
 
 ## Beginner
+## enjoy coding
 
 * [Binary Search Tree: Insertion](https://www.hackerrank.com/challenges/binary-search-tree-insertion/problem) (Hackerrank)
 * [Tree: Inorder Traversal](https://www.hackerrank.com/challenges/tree-inorder-traversal/problem) (Hackerrank)
