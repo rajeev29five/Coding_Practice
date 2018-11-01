@@ -1,6 +1,6 @@
 //
 // Code Contributor(s): Rajeev Ranjan
-//
+
 
 class Node {
   int data;
