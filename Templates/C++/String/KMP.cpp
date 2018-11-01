@@ -1,6 +1,5 @@
-//
+
 // Code Contributor(s) : Rajeev Ranjan
-//
 
 #include <iostream>
 #include <bits/stdc++.h>
