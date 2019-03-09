@@ -2,150 +2,165 @@
 // Code Contributor(s) : Rajeev Ranjan
 //
 
-#include <iostream>
+#include "iostream"
 
 using namespace std;
 
-class List;
-
-class node
+class Node
 {
-	public:
-		int data;
-		node * next;
+public:
+	int data;
+	Node * next;
+	
 };
 
-class List
+class LinkedList
 {
-	node * head, *tail; 
-	public:
-		List(){ head = NULL; tail = NULL; }
-		void headInsert(int data);
-		void tailInsert(int data);
-		void display();
-		void delHead();
-		void delTail();
-		void delPos(int pos);
+private:
+	Node * first;
+	Node * last;
+	int length;
+	
+public:
+	LinkedList () {
+		first = NULL;
+		last = NULL;
+		length = 0;
+	}
+	void insertFront(int data);
+	void insertLast(int data);
+	void insertPosition(int data, int position);
+	void showList();
+	int getLength();
 };
 
-void List::headInsert(int data)
-{
-	node *newNode = new node;
-	newNode->data = data; 
-	if(head == NULL)
-	{
-		newNode->next = NULL;
-		head = newNode;
-		tail = newNode;
-	}
-	else
-	{
-		newNode->next = head;
-		head = newNode;
-	}
-}
-
-void List::tailInsert(int data)
-{
-	node * newNode = new node;
-	newNode->data = data;
-	if(tail == NULL)
-	{
-		newNode->next = NULL;
-		head = newNode;
-		tail = newNode;
-	}
-	else
-	{
-		tail->next = newNode;
-		newNode->next = NULL;
-		tail = newNode;
-	}
-}
-
-void List::delHead()
-{
-	node *temp = head;
-	if(head != NULL)
-	{
-		head = head->next;
-		delete temp;
-	}
-}
-
-void List::delTail()
-{
-	node *temp = tail;
-	node *curr = head;
-	if(tail != NULL)
-	{
-		while(curr->next != temp)
-		{
-			curr = curr->next;
-		}
-		tail = curr;
-		tail->next  = NULL;
-		delete temp;
-	}
-}
-
-void List::delPos(int pos)
-{
-	node *temp = head;
-	node *curr = NULL;
-	int c = 1;
-
-	if(pos == 1)
-		delHead();
-	else
-	{
-		while(temp != NULL && c != pos)
-		{
-			temp = temp->next;
-			c++;
-		}
-		curr = temp;
-		if(curr->next == NULL)
-			delTail();
-		else
-		{
-			temp = head;
-			while(temp->next != curr)
-			{
-				temp = temp->next;
-			}
-			temp->next = curr->next;
-			delete curr;
-		}
-	}		
-}
-
-void List::display()
-{
-	node *temp = head;
-	while(temp != NULL)
-	{
-		cout<<temp->data<<" ";
-		temp = temp->next;
+void LinkedList::showList() {
+	Node * curr = first;
+	cout<<endl<<"Updated List"<<endl;
+	while(curr!=NULL) {
+		cout<<curr->data<<" ";
+		curr = curr->next;
 	}
 	cout<<endl;
 }
 
-int main()
-{
-	List l;
-	l.headInsert(10);
-	l.headInsert(9);
-	l.headInsert(8);
-	l.display();
-	l.tailInsert(11);
-	l.tailInsert(12);
-	l.tailInsert(13);
-	l.display();
-	l.delHead();
-	l.delTail();
-	l.delPos(2);
-	l.display();
+int LinkedList::getLength() {
+	return length;
+}
 
+
+void LinkedList::insertFront(int data) {
+	if (first == NULL) {
+		Node * newNode = new Node;
+		newNode->data = data;
+		newNode->next = NULL;
+		first = newNode;
+		last = newNode;
+	}
+	else {
+		Node * newNode = new Node;
+		newNode->data = data;
+		newNode->next = first;
+		first = newNode;
+	}
+	length++;
+	showList();
+}
+
+void LinkedList::insertLast(int data) {
+	if (last == NULL) {
+		Node * newNode = new Node;
+		newNode->data = data;
+		newNode->next = NULL;
+		first = newNode;
+		last = newNode;
+	}
+	else {
+		Node * newNode = new Node;
+		newNode->data = data;
+		newNode->next = NULL;
+		last->next = newNode;
+		last = newNode;
+	}
+	length++;
+	showList();
+}
+
+void LinkedList::insertPosition(int data, int position) {
+
+	int counter = 1;
+
+	if (position == 0) {
+		insertFront(data);
+	}
+	else if (position == length) {
+		insertLast(data);
+	}
+	else if (position > length){
+		cout<<"Length of LinkedList is "<<getLength()<<" element cannot be inserted at "<<position<<endl;
+	}
+	else {
+		Node * temp = first;
+		while(temp != NULL && counter != position) {
+			counter++;
+			temp = temp->next;
+		}
+		Node * newNode = new Node;
+		newNode->data = data;
+		newNode->next = temp->next;
+		temp->next = newNode;
+		length++;
+		showList();
+	}	
+
+}
+
+int main(int argc, char const *argv[])
+{
+	int choice;
+	LinkedList l;
+	int data;
+	while(true) {
+		cout<<endl<<"--------Enter choice--------"<<endl;
+		cout<<"      1. For Head Insertion "<<endl;
+		cout<<"      2. For Tail Insertion "<<endl;
+		cout<<"      3. For Insertion at particular Position "<<endl;
+		cout<<"      4. See LinkedList "<<endl;
+		cout<<"      5. See Length of LinkedList "<<endl;
+		cin>>choice;
+		if (choice == 1) {
+
+			cout<<"Enter data : ";
+			cin>>data;
+			l.insertFront(data);
+		}
+		else if (choice == 2) {
+
+			cout<<"Enter data : ";
+			cin>>data;
+			l.insertLast(data);
+		}
+		else if (choice == 3) {
+
+			cout<<"Enter data : ";
+			int position;
+			cin>>data;
+
+			cout<<"Enter position : ";
+			cin>>position;
+
+			l.insertPosition(data, position);
+		}
+		else if (choice == 4) {
+			l.showList();
+		}
+		else if (choice == 5) {
+			cout<<"Length : "<<l.getLength()<<endl;
+		}
+		else {
+			break;
+		}
+	}
+	
 	return 0;
 }
