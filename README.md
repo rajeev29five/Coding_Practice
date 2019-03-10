@@ -9,11 +9,7 @@ Other directories contain links to beginner friendly problems from different onl
 ## Graph
 
 [BFS](https://www.cs.usfca.edu/~galles/visualization/BFS.html)
-
 [DFS](https://www.cs.usfca.edu/~galles/visualization/DFS.html)
-
 [Connected Components](https://www.cs.usfca.edu/~galles/visualization/ConnectedComponent.html)
-
 [Dijkstra Shortest Path](https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html)
-
 [Prim's Minimum Cost Spanning Tree](https://www.cs.usfca.edu/~galles/visualization/Prim.html)
