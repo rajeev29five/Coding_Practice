@@ -4,6 +4,12 @@ Templates directory contains implementations of various algorithms , will be add
 
 Other directories contain links to beginner friendly problems from different online judges for practice.
 
+# Learning Resources
+
+## Dynammic Programming
+
+* https://github.com/rajeev29five/Coding_Practice/blob/master/Dynamic%20Programming/DynamicProg.pdf
+
 # Visualization
 
 ## Graph
