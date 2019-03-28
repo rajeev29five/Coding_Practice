@@ -1,3 +1,7 @@
+//
+// Code Contributor(s) : Rajeev Ranjan
+//
+
 import java.util.Scanner;
 
 class QuickSort {
