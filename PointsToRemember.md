@@ -66,7 +66,6 @@ The important points about Java ArrayList class are:
 
 * Java ArrayList class can contain duplicate elements.
 * Java ArrayList class maintains insertion order.
-* Java ArrayList class is non synchronized.
 * Java ArrayList allows random access because array works at the index basis.
 * In Java ArrayList class, manipulation is slow because a lot of shifting needs to be occurred if any element is removed from the array list.
 
